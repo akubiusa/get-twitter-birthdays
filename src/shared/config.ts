@@ -16,6 +16,9 @@ export const GOOGLE_TOKEN_CACHE_PATH =
   process.env.GOOGLE_TOKEN_CACHE_PATH ?? './data/google-tokens.json'
 export const CALENDAR_EVENTS_PATH =
   process.env.CALENDAR_EVENTS_PATH ?? './data/calendar-events.json'
+export const CALENDAR_EVENTS_LEGACY_CALENDAR_ID = (
+  process.env.CALENDAR_EVENTS_LEGACY_CALENDAR_ID ?? ''
+).trim()
 const bindHost = process.env.GOOGLE_AUTH_BIND_HOST?.trim()
 export const GOOGLE_AUTH_BIND_HOST =
   bindHost === undefined || bindHost === '' ? '127.0.0.1' : bindHost
